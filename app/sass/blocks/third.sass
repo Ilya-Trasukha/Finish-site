@@ -12,6 +12,7 @@
         &-desc
             padding: 10px 0px 20px 0px
         &-punts
+            display: flex
             ul
                 padding: 0px
                 margin: 0px
@@ -21,5 +22,18 @@
                 margin-bottom: 30px
                 img
                     padding-right: 10px
-
+@media (max-width: 992px)
+    .features
+        flex-direction: column
+        &__left
+            padding-top: 10px
+            text-align: center
+            &-title
+                font-size: 16px
+            &-punts
+                flex-direction: column
+                align-items: center
+@media (max-width: 576px)
+    .features
+        padding-top: 20px
             

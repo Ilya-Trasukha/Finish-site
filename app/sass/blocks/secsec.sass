@@ -1,4 +1,6 @@
 .info
+    width: 100%
+    max-width: 845px
     border: 1px solid #c4c4c4
     border-radius: 10px
     cursor: pointer
@@ -8,7 +10,7 @@
     &__database
         display: flex
         justify-content: space-evenly
-        margin: 40px 0px 
+        padding: 40px 0px
         span
             font-weight: bold
         img
@@ -18,17 +20,28 @@
         justify-content: center
     &__slash
         border: 1px solid #c4c4c4
-// @media (max-width:960px)
-//     .info__database
-//         img
-//             padding-right: 5px
-// @media (max-width:720px)
-//     .info
-//         display: flex
-//         width: 30%
-//     .info__database
-//         flex-direction: column
-//         margin: 5px
+@media (max-width:992px)
+    .info
+        max-width: 700px
+@media (max-width:768px)
+    .info
+        max-width: 100px
+        &__database
+            flex-direction: column
+            padding: 10px 0px
+            img
+                padding-right: 0
+        &__desc
+            text-align: center
+            flex-direction: column
+            padding-bottom: 10px
+            align-items: center
+            padding-top: 10px
+            &:first-child
+                padding: 0
+            
+            
+            
       
 
             
