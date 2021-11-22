@@ -1,0 +1,59 @@
+.plan
+    padding-top: 100px
+    &__title
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $titlecolor
+        font-weight: bold
+        font-size: 35px
+    &__desc
+        display: flex
+        align-items: center
+        justify-content: center
+    &__cardlist
+        padding-top: 30px
+        display: flex
+        justify-content: space-around       
+    &__card
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        height: 700px
+        width: 300px
+        i
+            color: #2FAB73
+            padding: 0 20px
+        &-title
+            display: flex
+            justify-content: center
+            color: $titlecolor
+            font-weight: bold
+            font-size: 18px
+        &-desc
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 150px
+@media (max-width:770px)
+    .plan__card
+        justify-content: flex-start
+        &-desc
+            display: none
+        &-title
+            padding: 10px 0
+    .plan__desc
+        text-align: center
+@media (max-width:540px)
+    .plan__cardlist
+        flex-wrap: wrap
+        
+        img
+            display: none
+    .plan__card
+        height: 100%
+    
+
+    
+

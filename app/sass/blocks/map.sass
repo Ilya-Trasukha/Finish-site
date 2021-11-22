@@ -1,0 +1,169 @@
+.map
+    padding-top: 100px
+    position: relative
+    &__title
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        color: $titlecolor
+        font-weight: bold
+        font-size: 35px
+        padding-bottom: 20px
+    &__desc
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding-bottom: 20px
+    &__image
+        &-earth
+            cursor: pointer
+            filter: grayscale(100%)
+            &:hover
+                filter: grayscale(0%)
+                animation: hoverImage 0.1s linear
+                animation-duration: 2s
+                animation-fill-mode: forwards
+    #p1
+        top: 49%
+        left: 55%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p2
+        top: 56%
+        left: 24%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p3
+        top: 57%
+        right: 20%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p4
+        bottom: 19%
+        right: 10%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p5
+        bottom: 20%
+        right: 45%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p6
+        top: 39%
+        left: 35%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p7
+        bottom: 22%
+        left: 31%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p8
+        bottom: 53%
+        right: 5%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p9
+        left: 11%
+        top: 49%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    #p10
+        bottom: 33%
+        right: 31%
+        border-radius: 50%
+        position: absolute
+        transition: all .5s ease-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2) 
+    &__social
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        img
+            cursor: pointer
+            transition: all .5s ease-out
+            filter: grayscale(100%)
+            &:hover
+                filter: grayscale(0%)
+@keyframes hoverImage
+    0%
+        filter: grayscale(100%)
+    25%
+        filter: grayscale(75%)
+    50%
+        filter: grayscale(50%)
+    75%
+        filter: grayscale(25%)
+    100%
+        filter: grayscale(0%)
+
+@media (max-width:1320px)
+    #p1
+        display: none
+    #p2
+        display: none
+    #p3
+        display: none
+    #p4
+        display: none
+    #p5
+        display: none
+    #p6
+        display: none
+    #p7
+        display: none
+    #p8
+        display: none
+    #p9
+        display: none
+    #p10
+        display: none
+@media (max-width:992px)
+    .map__social
+        flex-wrap: wrap
+@media (max-width:540px)
+    .map__social
+        flex-direction: column
+    .map__image-earth
+        img
+            display: none
