@@ -12,11 +12,13 @@
         a
             text-decoration: none
             color: $titlecolor
-        span
+        h1
             border-bottom: 1px solid transparent
             cursor: pointer
             font-weight: bold
             transition: 0.5s ease all
+            font-size: 50px
+            display: inline-block
             &:hover
                  border-bottom: 1px solid 
                  color: $titlecolor
@@ -26,24 +28,29 @@
         a
             text-decoration: none
             color: $textcolor
-        span
-            
+        h3
             border-bottom: 1px solid transparent
             cursor: pointer
             font-weight: bold
+            display: inline-block
             &:hover
                  border-bottom: 1px solid
                  color: $textcolor
-    
+    &__base
+        cursor: pointer
+        transition:  0.6s ease-in-out  
+        &:hover
+            filter: drop-shadow(10px 0px 20px $accent)
     &__N
         position: absolute
         top: 120px
         right: 490px
-        filter: grayscale(100%)
+        filter: grayscale(100%) 
         transition: 0.5s
         cursor: pointer
         &:hover
             filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
     &__lock
         position: absolute
         top: 0px
@@ -53,6 +60,7 @@
         cursor: pointer
         &:hover
             filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
     &__play
         position: absolute
         top: 0px
@@ -62,6 +70,7 @@
         cursor: pointer
         &:hover
             filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
     &__rate
         position: absolute
         top: 85px
@@ -71,6 +80,7 @@
         cursor: pointer
         &:hover
             filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
 @media  (max-width: 1200px)
     .firstsec
         padding-top: 0px

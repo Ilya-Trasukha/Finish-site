@@ -7,21 +7,24 @@
         color: $titlecolor
         font-weight: bold
         font-size: 35px
-    &__desc
-        display: flex
-        align-items: center
-        justify-content: center
     &__cardlist
         padding-top: 30px
         display: flex
-        justify-content: space-around       
+        justify-content: space-around
+    &__desc  
+        display: flex
+        justify-content: center
+        align-items: center   
     &__card
+        cursor: pointer
+        border-radius: 10px
         display: flex
         flex-direction: column
         justify-content: space-around
         align-items: center
         height: 700px
         width: 300px
+        transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out
         i
             color: #2FAB73
             padding: 0 20px
@@ -36,9 +39,18 @@
             flex-direction: column
             justify-content: space-between
             height: 150px
+        &-button
+            padding: 20px 60px
+        &:hover
+            border: 1px solid #c4c4c4
+            border-radius: 10px
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
 @media (max-width:770px)
+    .plan
+        padding-top: 0px
     .plan__card
         justify-content: flex-start
+        height: 375px
         &-desc
             display: none
         &-title
@@ -48,11 +60,11 @@
 @media (max-width:540px)
     .plan__cardlist
         flex-wrap: wrap
-        
         img
             display: none
     .plan__card
-        height: 100%
+        height: 200px
+        
     
 
     
