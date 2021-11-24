@@ -1,0 +1,112 @@
+.footer
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    width: 100%
+    padding-top: 100px
+    &__info
+        &-desc
+            padding-top: 20px
+            padding-bottom: 20px
+            a
+                text-decoration: none
+            span
+                border-bottom: 1px solid transparent
+                cursor: pointer
+                font-weight: bold
+                transition: 0.5s ease all
+                color: $textcolor
+                &:hover
+                    border-bottom: 1px solid 
+        &-image
+            cursor: pointer
+        &-icons
+            padding-bottom: 20px
+            i
+                font-size: 30px
+                margin-right: 20px
+                border: 2px solid #c4c4c4
+                transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out
+                transition: transform 0.4s ease-in-out
+                border-radius: 50%
+                padding: 10px
+                color: #c4c4c4
+                cursor: pointer
+                &:hover
+                    color: $accent
+                    border: 2px solid $accent
+                    box-shadow: 0 0 10px $accent, 0 0 20px $accent, 0 0 40px $accent, 0 0 50px $accent
+                    transform: rotateZ(30deg)
+        &-c
+            color: $textcolor
+    &__product
+        span
+            color: $titlecolor
+            font-weight: bold
+        ul
+            padding-left: 0px
+            li
+                padding-top: 10px
+                list-style: none
+                a
+                    text-decoration: none
+                    color: $textcolor
+                    border-bottom: 3px solid transparent
+                    transition: 0.5s ease-in-out
+                    &:hover
+                        border-bottom: 3px solid $accent
+    &__engage
+        span
+            color: $titlecolor
+            font-weight: bold
+        ul
+            padding-left: 0px
+            li
+                padding-top: 10px
+                list-style: none
+                a
+                    text-decoration: none
+                    color: $textcolor
+                    border-bottom: 3px solid transparent
+                    transition: 0.5s ease-in-out
+                    &:hover
+                        border-bottom: 3px solid $accent
+    &__earn
+        span
+            color: $titlecolor
+            font-weight: bold
+        ul
+            padding-left: 0px
+            li
+                padding-top: 10px
+                list-style: none
+                a
+                    text-decoration: none
+                    color: $textcolor
+                    border-bottom: 3px solid transparent
+                    transition: 0.5s ease-in-out
+                    &:hover
+                        border-bottom: 3px solid $accent
+@media (max-width:992px)
+    .footer
+        flex-direction: column
+        text-align: center
+        align-items: center
+        &__info
+            &-image
+                text-align: -webkit-center
+        &__product
+            padding-top: 20px
+            ul
+                li
+                    padding-top: 0px
+        &__engage
+            padding-top: 20px
+            ul
+                li
+                    padding-top: 0px
+        &__earn
+            padding-top: 20px
+            ul
+                li
+                    padding-top: 0px

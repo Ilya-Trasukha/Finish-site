@@ -24,6 +24,7 @@
         align-items: center
         height: 700px
         width: 300px
+        border: 2px solid #c4c4c4
         transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out
         i
             color: #2FAB73
@@ -42,28 +43,33 @@
         &-button
             padding: 20px 60px
         &:hover
-            border: 1px solid #c4c4c4
             border-radius: 10px
-            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
-@media (max-width:770px)
+            border: 2px solid $accent
+            box-shadow: 0 0 10px $accent, 0 0 20px $accent, 0 0 40px $accent, 0 0 50px $accent
+@media (max-width:1140px)
+    .plan__card
+        margin-right: 10px
+@media (max-width:960px)
     .plan
         padding-top: 0px
     .plan__card
         justify-content: flex-start
-        height: 375px
+        max-height: 375px
         &-desc
             display: none
         &-title
             padding: 10px 0
     .plan__desc
         text-align: center
-@media (max-width:540px)
+@media (max-width:770px)
     .plan__cardlist
         flex-wrap: wrap
         img
             display: none
     .plan__card
+        margin-top: 10px
         height: 200px
+        width: 200px
         
     
 

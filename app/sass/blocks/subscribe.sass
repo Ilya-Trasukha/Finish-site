@@ -1,0 +1,41 @@
+.subscribe
+    width: 100%
+    max-width: 845px
+    border: 2px solid #c4c4c4
+    border-radius: 10px
+    cursor: pointer
+    transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out
+    &:hover
+        border: 2px solid $accent
+        box-shadow: 0 0 10px $accent, 0 0 20px $accent, 0 0 40px $accent, 0 0 50px $accent
+    &__sub
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 15px
+    &__info
+        &-title
+            font-weight: bold
+            color: $titlecolor
+            font-size: 35px
+    &__button
+        padding: 20px 35px
+@media (max-width:992px)
+    .subscribe
+        max-width: 400px
+        &__sub
+           flex-direction: column
+           text-align: center
+        &__info
+            &-title
+                font-size: 25px
+           
+@media (max-width:540px)
+    .subscribe
+        max-width: 300px
+        &__info
+            &-title
+                font-size: 16px
+        
+
+       

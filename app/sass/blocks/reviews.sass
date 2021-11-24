@@ -1,0 +1,55 @@
+.revivews
+    padding-top: 100px
+    padding-bottom: 100px
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        &-title
+            font-weight: bold
+            font-size: 35px
+            color: $titlecolor
+        &-desc
+            padding-top: 20px
+    &__cardlist
+        display: flex
+        justify-content: space-between
+        padding-top: 50px
+    &__card
+        max-width: 400px
+        max-height: 230px
+        border: 2px solid #c4c4c4
+        border-radius: 15px
+        transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out
+        cursor: pointer
+        &:hover
+            border: 2px solid $accent
+            box-shadow: 0 0 10px $accent, 0 0 20px $accent, 0 0 40px $accent, 0 0 50px $accent
+        &-rate
+            i
+                color: #fceb04
+        &-info
+            display: flex
+            align-items: center
+            justify-content: space-around
+            padding-top: 15px
+        &-desc
+            font-weight: bold
+            padding: 15px 
+    &__slider
+        display: flex
+        justify-content: space-between
+        padding-top: 20px
+        &-dot
+            i
+                cursor: pointer
+                font-size: 20px
+        &-arrow
+            i
+                font-size: 40px
+                cursor: pointer
+                transition: 0.4s ease-in-out
+                &:hover
+                    color: $accent
