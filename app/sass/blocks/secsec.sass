@@ -15,12 +15,37 @@
         span
             font-weight: bold
         img
-            padding-right: 40px
+            border-radius: 50px
+            animation: light 3s linear 0s infinite
+            &:hover
+                animation: none
+    &__users-desc
+        padding-left: 40px
+    &__loc-desc
+        padding-left: 40px
+    &__serv-desc
+        padding-left: 40px
     &__desc
         display: flex
         justify-content: center
     &__slash
         border: 1px solid #c4c4c4
+@keyframes light
+    0%
+        box-shadow: 0 0 10px $accent
+    10%
+        box-shadow: 0 0 20px $accent
+    20%
+        box-shadow: 0 0 40px $accent
+    40%
+        box-shadow: 0 0 50px $accent
+    60%
+        box-shadow: 0 0 40px $accent
+    80%
+        box-shadow: 0 0 20px $accent
+    100%
+        box-shadow: 0 0 10px $accent
+        
 @media (max-width:992px)
     .info
         max-width: 700px
@@ -32,6 +57,15 @@
             padding: 10px 0px
             img
                 padding-right: 0
+        &__users-desc
+            padding-left: 0px
+            padding-top: 10px
+        &__loc-desc
+            padding-left: 0px
+            padding-top: 10px
+        &__serv-desc
+            padding-left: 0px
+            padding-top: 10px
         &__desc
             text-align: center
             flex-direction: column
