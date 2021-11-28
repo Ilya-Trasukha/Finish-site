@@ -1,0 +1,112 @@
+.firstsec
+    width: 100%
+    padding-top: 50px
+    padding-bottom: 100px
+    display: flex
+    position: relative
+    justify-content: space-between
+    &__head
+        font-size: 50px
+        color: $titlecolor
+        font-weight: 500
+        a
+            text-decoration: none
+            color: $titlecolor
+        h1
+            border-bottom: 1px solid transparent
+            cursor: pointer
+            font-weight: bold
+            transition: 0.5s ease all
+            font-size: 50px
+            display: inline-block
+            &:hover
+                 border-bottom: 1px solid 
+                 color: $titlecolor
+    &__info
+        font-weight: 500
+        padding: 10px 0px
+        a
+            text-decoration: none
+            color: $textcolor
+        h3
+            border-bottom: 1px solid transparent
+            cursor: pointer
+            font-weight: bold
+            display: inline-block
+            transition: 0.5s ease all
+            &:hover
+                 border-bottom: 1px solid
+                 color: $textcolor
+    &__base
+        cursor: pointer
+        transition:  0.6s ease-in-out  
+        &:hover
+            filter: drop-shadow(10px 0px 20px $accent)
+    &__N
+        position: absolute
+        top: 120px
+        right: 490px
+        filter: grayscale(100%) 
+        transition: 0.5s
+        cursor: pointer
+        &:hover
+            filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
+    &__lock
+        position: absolute
+        top: 0px
+        right: 510px
+        filter: grayscale(100%)
+        transition: 0.5s
+        cursor: pointer
+        &:hover
+            filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
+    &__play
+        position: absolute
+        top: 0px
+        right: 215px
+        filter: grayscale(100%)
+        transition: 0.5s
+        cursor: pointer
+        &:hover
+            filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
+    &__rate
+        position: absolute
+        top: 85px
+        right: 80px
+        filter: grayscale(100%)
+        transition: 0.5s
+        cursor: pointer
+        &:hover
+            filter: grayscale(0%)
+            box-shadow: 0 0 10px #c4c4c4, 0 0 20px #c4c4c4, 0 0 40px #c4c4c4, 0 0 50px #c4c4c4
+@media  (max-width: 1200px)
+    .firstsec
+        padding-top: 0px
+        padding-bottom: 10px
+        justify-content: center
+        &__pic
+            display: none
+        &__button
+            display: flex
+            justify-content: center
+        &__head
+            font-size: 35px
+            text-align: center
+        &__info
+            text-align: center
+@media  (max-width: 576px)
+    .firstsec
+        padding-left: 0px
+        padding-top: 0px
+        &__head
+            font-size: 16px
+            text-align: center
+        &__info
+            text-align: center
+    
+
+
+            

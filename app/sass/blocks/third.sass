@@ -1,0 +1,45 @@
+.features
+    padding-top: 100px
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    width: 100%
+    &__image
+        cursor: pointer
+        transition:  0.6s ease-in-out  
+        &:hover
+            filter: drop-shadow(10px 0px 20px $accent)
+    &__left
+        &-title
+            font-size: 35px
+            color: $titlecolor
+            font-weight: bold
+        &-desc
+            padding: 10px 0px 20px 0px
+        &-punts
+            display: flex
+            ul
+                padding: 0px
+                margin: 0px
+            li
+                display: flex
+                list-style: none
+                margin-bottom: 30px
+                img
+                    padding-right: 10px
+@media (max-width: 992px)
+    .features
+        padding-top: 30px
+        flex-direction: column
+        &__left
+            padding-top: 10px
+            text-align: center
+            &-title
+                font-size: 16px
+            &-punts
+                flex-direction: column
+                align-items: center
+@media (max-width: 576px)
+    .features
+        padding-top: 20px
+            

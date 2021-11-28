@@ -1,0 +1,85 @@
+.plan
+    padding-top: 100px
+    &__title
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $titlecolor
+        font-weight: bold
+        font-size: 35px
+    &__cardlist
+        padding-top: 30px
+        display: flex
+        justify-content: space-around
+    &__desc  
+        display: flex
+        justify-content: center
+        align-items: center   
+    &__card
+        cursor: pointer
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        height: 700px
+        width: 300px
+        border: 2px solid #c4c4c4
+        transition: box-shadow 0.4s ease-in-out, color 0.4s ease-in-out
+        i
+            color: #2FAB73
+            padding: 0 20px
+        ul
+            padding-left: 0px
+            margin: 0px
+        li
+            list-style: none
+            padding-top: 10px
+        &-image
+            padding-top: 10px
+        &-title
+            display: flex
+            justify-content: center
+            color: $titlecolor
+            font-weight: bold
+            font-size: 18px
+        &-desc
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 150px
+        &-button
+            padding: 20px 60px
+        &:hover
+            border-radius: 10px
+            border: 2px solid $accent
+            box-shadow: 0 0 10px $accent, 0 0 20px $accent, 0 0 40px $accent, 0 0 50px $accent
+@media (max-width:1140px)
+    .plan__card
+        margin-right: 10px
+@media (max-width:960px)
+    .plan
+        padding-top: 0px
+    .plan__card
+        justify-content: flex-start
+        max-height: 375px
+        &-desc
+            display: none
+        &-title
+            padding: 10px 0
+    .plan__desc
+        text-align: center
+@media (max-width:770px)
+    .plan__cardlist
+        flex-wrap: wrap
+        img
+            display: none
+    .plan__card
+        margin-top: 10px
+        height: 200px
+        width: 200px
+        
+    
+
+    
+
